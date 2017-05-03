@@ -1,0 +1,50 @@
+h3 {
+  font-family: "Arial Bold";
+}
+
+h2 {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 2.5em;
+}
+
+p {
+  font-family: "Arial Bold";
+  font-size: 1.2em;
+  margin: .5em 2em;
+}
+
+.font_style {
+  font-family: "Arial Bold"sans-serif;
+  font-size: 1.2em;
+}
+
+div#mainmenu {
+  width: 100%;
+}
+
+div#mainmenu ul {
+  list-style-type: none;
+}
+
+div#mainmenu ul li a {
+  font-family: "Arial Bold";
+  font-size: 1.1em;
+  font-weight: 900;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: .80em;
+}
+
+div#mainmenu ul li {
+  background-color: darkgray;
+  text-align: center;
+  display: inline;
+  width: 20%;
+  float: left;
+  margin-right: 2.5em;
+}
+
+a:hover {
+    background-color: #212121;
+}
