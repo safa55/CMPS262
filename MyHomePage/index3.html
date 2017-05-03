@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title>Sergio Flores</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script src="jquery-3.1.1.min.js"></script>
+<script>
+$(function() {
+  $("#changecolor").mouseover(function() {
+    $("h2").css("color", "#FFB563")
+  });
+  $("#changecolor").on("mouseout", function() {
+    $(this).css("color", "#5f9ea0");
+  });
+  $("#hide").click(function() {
+    $("img").hide();
+  });
+  $("#show").click(function() {
+    $("img").show();
+  });
+  $("button").click(function(){
+    $("img").animate({
+        height: 'toggle'
+    });
+  });
+  $(".change").click( function() {
+    $("h2").css("color", "black");
+    $("h2").css("color", "#F44336");
+  });
+});
+
+function showpage(page) {
+  $("#page1").css("display", "none");
+  $("#page2").css("display", "none");
+  $("#page3").css("display", "none");
+  $("#page4").css("display", "none");
+  if (page === 1) {
+    $("#page1").css("display", "block");
+  }
+  else if (page === 2) {
+    $("#page2").css("display", "block");
+  }
+  else if (page === 3) {
+    $("#page3").css("display", "block");
+  }
+  else if (page === 4) {
+    $("#page4").css("display","block");
+  }
+}
+</script>
+</head>
+<body style="background-color: #757575" class="background">
+  <center><h2>Welcome to my Homepage</h2></center>
+  <div id="mainmenu">
+    <ul><li><a href="javascript:void(0)" onclick="showpage(1)">About Me</a></li><li><a href="javascript:void(0)" onclick="showpage(2)">Interests</a></li><li><a href="javascript:void(0)" onclick="showpage(3)">Coursework</a></li><li><a href="javascript:void(0)" onclick="showpage(4)">Contact Me</a></li></ul>
+  </div>
+  <br><br><br><br><br>
+  <center><img src="Sergio_Profile Photo.jpg" width="40%" height="30%"></center>
+
+  <div id="page1" style="display:none;" class="font_style">
+    <h3>About Me</h3>
+    <p>I used to be a professional violinist, but now changing career path to the IT field</p>
+  </div>
+
+  <div id="page2" class="font_style" style="display:none;">
+    <h3>Interests</h3>
+    <ul><li>Finding my dream job</li><li>Going for a walk with my wife and dog</li><li>Improving my house</li></ul>
+  </div>
+
+  <div id="page3" class="font_style" style="display:none;">
+    <h3>Coursework</h3>
+    <ul><li>Advanced Programming</li><li>Server Management</li><li>Data Mining</li><li>Senior Project</li></ul>
+  </div>
+
+  <div id="page4" class="font_style" style="display:none;">
+    <h3>Contact Me</h3>
+    <ul><li>You can contact me at: <a	href="mailto:sergioflores55@hotmail.com">sergioflores55@hotmail.com</a></li></ul>
+  </div>
+
+<button class="change" style="vertical-align:middle"><span>Change Title Color and Delete Photo</span></button>
+
+</body>
+</html>

@@ -48,3 +48,48 @@ div#mainmenu ul li {
 a:hover {
     background-color: #212121;
 }
+
+.change {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #212121;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font: "Arial Bold",
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.change span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.change span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.change:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.background {
+  background-color: #F44336;
+}
